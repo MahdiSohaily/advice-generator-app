@@ -65,5 +65,69 @@ select {
   }
 }
 /** general styling*/
+body {
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: min(1440px, 90%);
+  margin-inline: auto;
+  min-height: 100vh;
+}
+
+article {
+  position: relative;
+  max-width: 560px;
+  background-color: hsl(218deg, 20%, 24%);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+blockquote {
+  padding-block: 40px;
+  font-size: 28px;
+  font-weight: 800;
+  color: hsl(193deg, 38%, 86%);
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-inline: auto;
+  padding-bottom: 30px;
+}
+
+/**component styles */
+.advice-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  color: hsl(150deg, 100%, 66%);
+  letter-spacing: 3px;
+}
+
+.dice {
+  position: absolute;
+  bottom: -32.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65px;
+  height: 65px;
+  background: hsl(150deg, 100%, 66%) url("../images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 20px hsl(150deg, 100%, 66%), 0 -1px 20px hsl(150deg, 100%, 66%), 1px 0 20px hsl(150deg, 100%, 66%), -1px 0 20px hsl(150deg, 100%, 66%);
+}
 
 /*# sourceMappingURL=styles.css.map */
