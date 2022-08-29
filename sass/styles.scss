@@ -1,0 +1,72 @@
+@use "colors";
+@import "_reset.scss";
+/** general styling*/
+body {
+    background-color: colors.$dark-blue;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: min(1440px, 90%);
+    margin-inline: auto;
+    min-height: 100vh;
+  }
+  
+  article {
+    position: relative;
+    max-width: 560px;
+    background-color: colors.$dark-grayish-blue;
+    border-radius: 10px;
+    padding: 50px;
+  }
+  
+  blockquote {
+    padding-block: 40px;
+    font: {
+      size: 28px;
+      weight: colors.$font-weight;
+    }
+    color: colors.$light-cyan;
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    margin-inline: auto;
+    padding-bottom: 30px;
+  }
+  
+  /**component styles */
+  .advice-title {
+    text: {
+      transform: uppercase;
+      align: center;
+    }
+    font-size: 12px;
+    color: colors.$neon-blue;
+    letter-spacing: 3px;
+  }
+  .dice {
+    position: absolute;
+    bottom: -32.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+    background: colors.$neon-blue url("../images/icon-dice.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dice:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 20px colors.$neon-blue, 0 -1px 20px colors.$neon-blue,
+      1px 0 20px colors.$neon-blue, -1px 0 20px colors.$neon-blue;
+  }
+  

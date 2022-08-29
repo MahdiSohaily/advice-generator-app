@@ -1,0 +1,133 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/** general styling*/
+body {
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: min(1440px, 90%);
+  margin-inline: auto;
+  min-height: 100vh;
+}
+
+article {
+  position: relative;
+  max-width: 560px;
+  background-color: hsl(218deg, 20%, 24%);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+blockquote {
+  padding-block: 40px;
+  font-size: 28px;
+  font-weight: 800;
+  color: hsl(193deg, 38%, 86%);
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-inline: auto;
+  padding-bottom: 30px;
+}
+
+/**component styles */
+.advice-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  color: hsl(150deg, 100%, 66%);
+  letter-spacing: 3px;
+}
+
+.dice {
+  position: absolute;
+  bottom: -32.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65px;
+  height: 65px;
+  background: hsl(150deg, 100%, 66%) url("../images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 20px hsl(150deg, 100%, 66%), 0 -1px 20px hsl(150deg, 100%, 66%), 1px 0 20px hsl(150deg, 100%, 66%), -1px 0 20px hsl(150deg, 100%, 66%);
+}
+
+/*# sourceMappingURL=styles.css.map */
