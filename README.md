@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://www.frontendmentor.io/solutions/advice-generator-app-PaoIDd4rYN)
-- Live Site URL: [Live site URL](https://mahdisohaily.github.io/testimonials-grid-section-main/)
+- Live Site URL: [Live site URL](https://mahdisohaily.github.io/advice-generator-app/)
 
 ## My process
 
