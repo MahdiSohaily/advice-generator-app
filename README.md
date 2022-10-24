@@ -25,10 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-- Screenshot of the solution
-![Solution Screenshot](./design/desktop.png)
-- Screenshot of the solution
-![Solution Screenshot](./design/mobile.png)
+| Desktop version                              |               Mobile Version                |
+| -------------------------------------------- | :-----------------------------------------: |
+| ![Solution Screenshot](./design/desktop.png) | ![Solution Screenshot](./design/mobile.png) |
 
 ### Links
 
